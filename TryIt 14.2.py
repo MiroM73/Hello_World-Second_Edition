@@ -41,6 +41,11 @@ class InterestBankAccount(BankAccount):
         BankAccount.__init__(self, name, accNumber, balance)
         self.interestRate = interestRate
 
+    # def __str__(self):
+    #     BankAccount.__str__(self)
+    #     msg1 = "interestRate: " + str(self.interestRate * 100) + " %"
+    #     return msg1
+
     def addInterest(self):
         print "Adding interest: ", self.interestRate * 100, "%"
         interest = self.balance * self.interestRate
