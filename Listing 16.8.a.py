@@ -15,6 +15,7 @@ for x in range(1, 640):
     # if we increase the line width to 2, it looks even better
     pygame.draw.lines(screen,[0, 0, 0], False, plotPoints, 2)
     pygame.display.flip()
+    del plotPoints[0]
     time.sleep(0.01)
 
 
